@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Game</title>
+     <style>
+        .banner {
+            background-color: #f3f3f3;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Match the statements with the correct terms!</h2>
+    <h3> You are requested to follow the instructions: </h3>
+    <h4> <ol>1. The box contains all the options, click on the box to view the options. </ol> 
+    <ol> 2. Once you have done, click on submit. </ol></h4>
+
+<div>
+     <div class="banner">
+    <p>Businesses aim to increase profit and customer satisfaction.</p>
+    <select id="q1">
+        <option>Objectives</option>
+        <option>Need</option>
+        <option>Capital</option>
+        <option>Entrepreneurship</option>
+    </select>
+</div>
+
+<div>
+     <div class="banner">
+    <p>Human requirements that are essential for living and surviving.</p>
+    <select id="q2">
+        <option>Objectives</option>
+        <option>Need</option>
+        <option>Capital</option>
+        <option>Entrepreneurship</option>
+    </select>
+</div>
+
+<div>
+     <div class="banner">
+    <p>Anything produced by man in order to facilitate manufacturing process.</p>
+    <select id="q3">
+        <option>Objectives</option>
+        <option>Need</option>
+        <option>Capital</option>
+        <option>Entrepreneurship</option>
+    </select>
+</div>
+
+<div>
+     <div class="banner">
+    <p>Someone who takes risks, creates innovations and takes decisions with regard to the business.</p>
+    <select id="q4">
+        <option>Objectives</option>
+        <option>Need</option>
+        <option>Capital</option>
+        <option>Entrepreneurship</option>
+    </select>
+</div>
+
+<div>
+     <div class="banner">
+    <p>All the natural resources available are considered as what?</p>
+    <select id="q5">
+        <option>Objectives</option>
+        <option>Land</option>
+        <option>Capital</option>
+        <option>Entrepreneurship</option>
+    </select>
+</div>
+
+<button onclick="checkAnswers()">Check Answers</button>
+
+<script>
+    function checkAnswers() {
+        var q1 = document.getElementById("q1").value;
+        var q2 = document.getElementById("q2").value;
+        var q3 = document.getElementById("q3").value;
+        var q4 = document.getElementById("q4").value;
+        var q5 = document.getElementById("q5").value;
+
+        if (q1 === "Objectives" && q2 === "Need" && q3 === "Capital" && q4 === "Entrepreneurship" && q5 === "Land") {
+            alert("Congratulations! All answers are correct!");
+        } else {
+            alert("One or more answers are incorrect. Please try again.");
+        }
+    }
+</script>
+
+</body>
+</html>
